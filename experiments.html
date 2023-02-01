@@ -1,0 +1,149 @@
+<!-- script*, canvas*, template,   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sophie - My dog</title>
+    <meta name="description" content="Sophie's Page">
+    <meta name="author" content="Elaine Ha">
+    <link rel="stylesheet" href = "style/experiments.css">
+</head>
+<style>
+    h1 {
+        border-color: red;
+        border-style: solid;
+    }
+  </style>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./experiments.html">Experiment</a>
+    </nav>
+
+    <header>
+        <h1>Introducing my dog, Sophie</h1>
+    </header>
+
+    <h2>Diet</h2>
+    <h3>Foods</h3>
+    <section>
+        <picture>
+            <source media="(min-width:400px)" srcset="images/corgi.webp">
+            <source media="(min-width:610px)" srcset="images/cute_dog.jpeg">
+            <img src="images/corgi.webp" alt="Image of a corgi" style="width:auto;">
+          </picture>
+        <p>Sophie loves to eat human food. Her favorite human food is probably chocolate. However, it's important that <strong>you never feed her any chocolate.</strong></p>
+        <aside>To make the </aside>
+    </section>
+    <section>
+        <figure>
+            <img src="./images/dog_eating_watermelon.jpeg" alt="Image of my dog eating a watermelon.">
+            <figcaption>Fig.1 Sophie is eating a watermelon.</figcaption>
+        </figure>
+        <aside>The above image is displayed with the <code>img</code> tag.</aside>
+        <p> Sophie <span>loves</span> eating watermelon. One time she ate <em>6</em> watermelons! That's a lot!</p>
+    </section>
+    <section>
+        <video width="300" height="300" controls>
+            <source src="dog_eating.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <aside>This font color was changed with CSS. Like this: 
+            <pre>
+                body {
+                    color: blue;
+                }
+            </pre>
+        </aside>
+        <p>Sophie's daily diet consists of (her favorites ranked in order): </p>
+        <ol>
+            <li>kibbles (like the ones in the video!)</li>
+            <li>raw meat</li> 
+            <li>usually some type of fruit</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Sounds</h2>
+        <audio controls>
+            <source src="dog_barking.wav" type="audio/wav">
+            Your browser does not support the audio tag.
+        </audio>
+        <p>Dogs sound like this!</p>
+    </section>
+    <h2>Dog breeds!</h2>
+    <section>
+        <h3>Table</h3>
+        <table>
+            <colgroup>
+                <col span="2">
+            </colgroup>
+            <caption>Sizes based on dog breeds</caption>
+            <tr>
+                <th>Breed</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <td>Golden Retriever</td>
+                <td>Large</td>
+            </tr>
+            <tr>
+                <td>German Bulldogs</td>
+                <td>Small</td>
+            </tr>
+        </table>
+    </section>
+
+    <h2>Now it's your turn!</h2>
+    <section>
+        <form>
+            <label for="breeds">Choose your favorite dog breed from the list:</label>
+            <select name="breeds" id="breeds">
+                <optgroup label="My favorite dog breeds">
+                    <option value="Corgi">Corgi</option>
+                    <option value="Golden Retriever">Golden Retriever</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="Labrador">Labrador</option>
+                    <option value="Samoyed">Samoyed</option>
+                    <option value="Rottweiler">Rottweiler</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <label for="ratings">Rating for chosen dog breed:</label>
+        <input type="range" list="ratings" min="0" max="10" id="rating" name="rating" />
+        <datalist id="ratings">
+        <option value="0"></option>
+        <option value="2"></option>
+        <option value="4"></option>
+        <option value="6"></option>
+        <option value="8"></option>
+        <option value="10"></option>
+        </datalist>
+        <br>
+        <label for="dog-breed-reasoning">Reason why you chose that dog breed:</label>
+        <textarea id="dog-breed-reasoning" name="dog-bread-reasoning" rows="10" cols="40">Please enlighten us!</textarea>
+    </section>
+    <hr>
+
+    <h1>Other</h1>
+    <svg width="200" height="200">
+        <rect rx="50" ry="50" width="100" height="100"
+      </svg>
+
+    <template>This code is hidden</template>
+      <canvas id="myCanvas"></canvas>
+
+      <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 80, 100);
+      </script>
+
+
+</body>
+</html>
